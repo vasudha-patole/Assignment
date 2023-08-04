@@ -8,9 +8,14 @@ public class TimeAssignment {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Enter your number");
-		int i = scan.nextInt();
+		
+		int Num = scan.nextInt();
+		int Sec = Num % 60;
+		int Hr = Num / 60;
+		int Min = Hr % 60;
+		Hr = Hr/60;
 
-		System.out.println((i/3600) + " " + "Hour" + " " + ((i/60)) + " " +  "Minute" + " " + (i) +  " " + "Second");
+		System.out.println(Hr + " " + "Hours" + " " + Min + " " + "Minute" + " " + Sec + " " + "Second");
 		
 }
 }
